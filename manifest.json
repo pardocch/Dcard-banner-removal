@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Dcard-banner-removal",
+    "version": "1.0.1",
+    "description": "Remove Dcard banner when it is not logged in.",
+    "icons": {
+
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.dcard.tw/*"],
+            "js": ["dcard-banner-removal.js"]
+        }
+    ]
+}
